@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../public/css/style.css"">
+</head>
+
+<body>
+    <header>
+        <div class=" header-left">
+    <a href="index.html">
+        <h1>Event Flex</h1>
+    </a>
+    <nav>
+        <a href="gestion-eventos.html">Gestor de Eventos</a>
+        <a href="visualizacion-eventos.html">Buscador de Eventos</a>
+    </nav>
+    </div>
+    <div class="header-buttons">
+        <a href="login.html" class="button">Login</a>
+        <a href="registro.html" class="button">Registro</a>
+    </div>
+    </header>
+
+    <main>
+        <form id="passwordForm">
+            <label for="nombre">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Barra de progreso para la fortaleza de la contraseña -->
+            <div id="password-strength-bar">
+                <br>
+                <!-- Mensaje de fortaleza -->
+                <span id="password-strength-message" class="hidden"></span>
+            </div>
+            <span id="password-strength"></span>
+
+            <button type="submit">Registrarse</button>
+        </form>
+        <div id="errorContainer" class="hidden">
+            <p id="errorMessages"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gestión de Eventos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/registro.js"></script>
+    </body>
+
+</html>

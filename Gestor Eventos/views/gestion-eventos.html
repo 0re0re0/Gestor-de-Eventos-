@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Eventos</title>
+    <link rel="stylesheet" href="../public/css/style.css"">
+</head>
+
+<body>
+    <header>
+        <div class=" header-left">
+    <a href="index.html">
+        <h1>Event Flex</h1>
+    </a>
+    <nav>
+        <a href="gestion-eventos.html">Gestor de Eventos</a>
+        <a href="visualizacion-eventos.html">Buscador de Eventos</a>
+    </nav>
+    </div>
+    <div class="header-buttons">
+        <a href="login.html" class="button">Login</a>
+        <a href="registro.html" class="button">Registro</a>
+    </div>
+    </header>
+
+    <main>
+        <form id="crear-evento-form">
+            <label for="nombre-evento">Nombre del Evento:</label>
+            <input type="text" id="nombre-evento" name="nombre-evento" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="lugar">Lugar:</label>
+            <input type="text" id="lugar" name="lugar" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+
+            <button type="submit">Crear Evento</button>
+        </form>
+
+        <!-- Div donde se mostrará la información del evento creado -->
+        <div id="evento-creado" class="evento-info" style="display: none;">
+            <h2>Evento Creado</h2>
+            <p id="evento-nombre"></p>
+            <p id="evento-fecha"></p>
+            <p id="evento-hora"></p>
+            <p id="evento-lugar"></p>
+            <p id="evento-descripcion"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gestión de Eventos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/gestionEventos.js"></script>
+    </body>
+
+</html>

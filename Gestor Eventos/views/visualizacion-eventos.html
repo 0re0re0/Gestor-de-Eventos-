@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Eventos</title>
+    <link rel="stylesheet" href="../public/css/style.css"">
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html">
+                <h1>Event Flex</h1>
+            </a>
+            <nav>
+                <a href="gestion-eventos.html">Gestor de Eventos</a>
+                <a href="visualizacion-eventos.html">Buscador de Eventos</a>
+            </nav>
+        </div>
+        <div class="header-buttons">
+            <a href="login.html" class="button">Login</a>
+            <a href="registro.html" class="button">Registro</a>
+        </div>
+    </header>
+    <main>
+        <section class="search-events">
+            <div class="search-header">
+                <h2>Buscar eventos:</h2>
+                <input type="text" id="busqueda" placeholder="Buscar eventos...">
+            </div>
+        </section>
+        <div id="lista-eventos" class="event-cards">
+            <!-- Aquí se generarán las tarjetas de los eventos -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gestión de Eventos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/visualizarEventos.js"></script>
+</body>
+
+</html>
